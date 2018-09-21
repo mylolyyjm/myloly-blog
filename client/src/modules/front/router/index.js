@@ -1,6 +1,6 @@
-import App from '../app.vue';
-import Index from '../pages/index.vue';
-
+import App from '../App.vue';
+const Index = resolve => require(['../pages/index.vue'], resolve);
+const Article = resolve => require(['../pages/article.vue'], resolve);
 const routes = [
     {
         path: '/',
@@ -10,6 +10,10 @@ const routes = [
     {
         path: '/index',
         component: Index
+    },
+    {
+        path: '/article/:id',
+        component: Article
     }
 ];
 export default routes;

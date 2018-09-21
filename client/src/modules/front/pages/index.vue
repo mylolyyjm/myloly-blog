@@ -1,6 +1,6 @@
 <template>
     <div class="article-pos">
-        <article class="article" v-for="(item, index) of 12" :key="index">
+        <article class="article" v-for="(item, index) of 12" :key="index" @click="goToArticle(item)">
             <img class="image" src="../assets/images/123.jpg" alt="">
             <div class="time-author clearfix">
                 <p class="time">feb 17, 2016</p>
@@ -18,6 +18,23 @@
         </article>
     </div>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+
+            }
+        },
+        methods: {
+            goToArticle(item) {
+                this.$router.push(`/article/${item}`);
+            }
+        }
+    }
+</script>
+
+
 <style scoped lang="scss">
     @import '../assets/css/commom.css';
     .article-pos {
