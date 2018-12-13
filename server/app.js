@@ -141,5 +141,4 @@ app
 app.listen(config.app.port, () => {
     console.log('The server is running at http://localhost:' + config.app.port);
 });
-console.log(123);
 export default app;
