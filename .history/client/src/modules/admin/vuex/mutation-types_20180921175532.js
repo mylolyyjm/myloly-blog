@@ -1,2 +1,0 @@
-export const CREATE_ARRTICLE = 'CREATE_ARRTICLE';
-export const CREATE_TAG = 'CREATE_ARRTICLE';
