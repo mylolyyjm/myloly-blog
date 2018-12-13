@@ -24,7 +24,7 @@ mongoose.connection.on('error', () => {
 });
 mongoose.connection.on('success', () => {
     console.log('success');
-    
+
 });
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -141,5 +141,5 @@ app
 app.listen(config.app.port, () => {
     console.log('The server is running at http://localhost:' + config.app.port);
 });
-
+console.log(123);
 export default app;
